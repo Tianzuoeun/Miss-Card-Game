@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		942608412AAA4FFC00018B2E /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942608402AAA4FFC00018B2E /* cameraViewController.swift */; };
+		942608432AAA819600018B2E /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942608422AAA819600018B2E /* TableTableViewController.swift */; };
+		9495E6422AAA231D0036290A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6412AAA231D0036290A /* AppDelegate.swift */; };
+		9495E6442AAA231D0036290A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6432AAA231D0036290A /* SceneDelegate.swift */; };
+		9495E6462AAA231D0036290A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6452AAA231D0036290A /* ViewController.swift */; };
+		9495E6492AAA231D0036290A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9495E6472AAA231D0036290A /* Main.storyboard */; };
+		9495E64B2AAA231E0036290A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9495E64A2AAA231E0036290A /* Assets.xcassets */; };
+		9495E64E2AAA231E0036290A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9495E64C2AAA231E0036290A /* LaunchScreen.storyboard */; };
+		9495E6592AAA231E0036290A /* Miss_Card_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6582AAA231E0036290A /* Miss_Card_GameTests.swift */; };
+		9495E6632AAA231E0036290A /* Miss_Card_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6622AAA231E0036290A /* Miss_Card_GameUITests.swift */; };
+		9495E6652AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6642AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift */; };
+		9495E6772AAA26890036290A /* Best Player.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9495E6752AAA26890036290A /* Best Player.csv */; };
+		9495E6782AAA26890036290A /* Miss Card.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9495E6762AAA26890036290A /* Miss Card.csv */; };
+		9495E67B2AAA27B80036290A /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 9495E67A2AAA27B80036290A /* SwiftCSV */; };
+		9495E6802AAA2B560036290A /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 9495E67F2AAA2B560036290A /* CoreXLSX */; };
+		9495E6852AAA3BC50036290A /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6842AAA3BC50036290A /* ImageModel.m */; };
+		9495E6872AAA3F710036290A /* PickCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6862AAA3F710036290A /* PickCard.swift */; };
+		94AC7BBE2AAAAE4400967CF9 /* CameraCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC7BBD2AAAAE4400967CF9 /* CameraCollectionViewController.swift */; };
+		94AC7BC02AAAB04800967CF9 /* CameraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC7BBF2AAAB04800967CF9 /* CameraCollectionViewCell.swift */; };
+		94AC7BCB2AAAC48000967CF9 /* DataPass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC7BCA2AAAC48000967CF9 /* DataPass.m */; };
+		94AC7BCD2AAAC7F800967CF9 /* PlayCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC7BCC2AAAC7F800967CF9 /* PlayCamViewController.swift */; };
+		94B272B92AAADCBF0062440B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B272B82AAADCBF0062440B /* ReviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9495E6552AAA231E0036290A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9495E6362AAA231D0036290A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9495E63D2AAA231D0036290A;
+			remoteInfo = "Miss Card Game";
+		};
+		9495E65F2AAA231E0036290A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9495E6362AAA231D0036290A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9495E63D2AAA231D0036290A;
+			remoteInfo = "Miss Card Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		942608402AAA4FFC00018B2E /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
+		942608422AAA819600018B2E /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
+		9495E63E2AAA231D0036290A /* Miss Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miss Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9495E6412AAA231D0036290A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9495E6432AAA231D0036290A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9495E6452AAA231D0036290A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9495E6482AAA231D0036290A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9495E64A2AAA231E0036290A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9495E64D2AAA231E0036290A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9495E64F2AAA231E0036290A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9495E6542AAA231E0036290A /* Miss Card GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miss Card GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9495E6582AAA231E0036290A /* Miss_Card_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miss_Card_GameTests.swift; sourceTree = "<group>"; };
+		9495E65E2AAA231E0036290A /* Miss Card GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miss Card GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9495E6622AAA231E0036290A /* Miss_Card_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miss_Card_GameUITests.swift; sourceTree = "<group>"; };
+		9495E6642AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miss_Card_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9495E6752AAA26890036290A /* Best Player.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Best Player.csv"; sourceTree = "<group>"; };
+		9495E6762AAA26890036290A /* Miss Card.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Miss Card.csv"; sourceTree = "<group>"; };
+		9495E6822AAA3BC50036290A /* Miss Card Game-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Miss Card Game-Bridging-Header.h"; sourceTree = "<group>"; };
+		9495E6832AAA3BC50036290A /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		9495E6842AAA3BC50036290A /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		9495E6862AAA3F710036290A /* PickCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCard.swift; sourceTree = "<group>"; };
+		94AC7BBD2AAAAE4400967CF9 /* CameraCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionViewController.swift; sourceTree = "<group>"; };
+		94AC7BBF2AAAB04800967CF9 /* CameraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCollectionViewCell.swift; sourceTree = "<group>"; };
+		94AC7BC92AAAC48000967CF9 /* DataPass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataPass.h; sourceTree = "<group>"; };
+		94AC7BCA2AAAC48000967CF9 /* DataPass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataPass.m; sourceTree = "<group>"; };
+		94AC7BCC2AAAC7F800967CF9 /* PlayCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCamViewController.swift; sourceTree = "<group>"; };
+		94B272B82AAADCBF0062440B /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9495E63B2AAA231D0036290A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9495E6802AAA2B560036290A /* CoreXLSX in Frameworks */,
+				9495E67B2AAA27B80036290A /* SwiftCSV in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9495E6512AAA231E0036290A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9495E65B2AAA231E0036290A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9495E6352AAA231D0036290A = {
+			isa = PBXGroup;
+			children = (
+				9495E6402AAA231D0036290A /* Miss Card Game */,
+				9495E6572AAA231E0036290A /* Miss Card GameTests */,
+				9495E6612AAA231E0036290A /* Miss Card GameUITests */,
+				9495E63F2AAA231D0036290A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9495E63F2AAA231D0036290A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9495E63E2AAA231D0036290A /* Miss Card Game.app */,
+				9495E6542AAA231E0036290A /* Miss Card GameTests.xctest */,
+				9495E65E2AAA231E0036290A /* Miss Card GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9495E6402AAA231D0036290A /* Miss Card Game */ = {
+			isa = PBXGroup;
+			children = (
+				9495E6752AAA26890036290A /* Best Player.csv */,
+				9495E6762AAA26890036290A /* Miss Card.csv */,
+				9495E6412AAA231D0036290A /* AppDelegate.swift */,
+				9495E6432AAA231D0036290A /* SceneDelegate.swift */,
+				9495E6452AAA231D0036290A /* ViewController.swift */,
+				942608402AAA4FFC00018B2E /* cameraViewController.swift */,
+				94AC7BCC2AAAC7F800967CF9 /* PlayCamViewController.swift */,
+				942608422AAA819600018B2E /* TableTableViewController.swift */,
+				94AC7BBF2AAAB04800967CF9 /* CameraCollectionViewCell.swift */,
+				94AC7BBD2AAAAE4400967CF9 /* CameraCollectionViewController.swift */,
+				94B272B82AAADCBF0062440B /* ReviewViewController.swift */,
+				9495E6862AAA3F710036290A /* PickCard.swift */,
+				9495E6472AAA231D0036290A /* Main.storyboard */,
+				9495E64A2AAA231E0036290A /* Assets.xcassets */,
+				94AC7BC92AAAC48000967CF9 /* DataPass.h */,
+				94AC7BCA2AAAC48000967CF9 /* DataPass.m */,
+				9495E6832AAA3BC50036290A /* ImageModel.h */,
+				9495E6842AAA3BC50036290A /* ImageModel.m */,
+				9495E64C2AAA231E0036290A /* LaunchScreen.storyboard */,
+				9495E64F2AAA231E0036290A /* Info.plist */,
+				9495E6822AAA3BC50036290A /* Miss Card Game-Bridging-Header.h */,
+			);
+			path = "Miss Card Game";
+			sourceTree = "<group>";
+		};
+		9495E6572AAA231E0036290A /* Miss Card GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				9495E6582AAA231E0036290A /* Miss_Card_GameTests.swift */,
+			);
+			path = "Miss Card GameTests";
+			sourceTree = "<group>";
+		};
+		9495E6612AAA231E0036290A /* Miss Card GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9495E6622AAA231E0036290A /* Miss_Card_GameUITests.swift */,
+				9495E6642AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift */,
+			);
+			path = "Miss Card GameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9495E63D2AAA231D0036290A /* Miss Card Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9495E6682AAA231E0036290A /* Build configuration list for PBXNativeTarget "Miss Card Game" */;
+			buildPhases = (
+				9495E63A2AAA231D0036290A /* Sources */,
+				9495E63B2AAA231D0036290A /* Frameworks */,
+				9495E63C2AAA231D0036290A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Miss Card Game";
+			packageProductDependencies = (
+				9495E67A2AAA27B80036290A /* SwiftCSV */,
+				9495E67F2AAA2B560036290A /* CoreXLSX */,
+			);
+			productName = "Miss Card Game";
+			productReference = 9495E63E2AAA231D0036290A /* Miss Card Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9495E6532AAA231E0036290A /* Miss Card GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9495E66B2AAA231E0036290A /* Build configuration list for PBXNativeTarget "Miss Card GameTests" */;
+			buildPhases = (
+				9495E6502AAA231E0036290A /* Sources */,
+				9495E6512AAA231E0036290A /* Frameworks */,
+				9495E6522AAA231E0036290A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9495E6562AAA231E0036290A /* PBXTargetDependency */,
+			);
+			name = "Miss Card GameTests";
+			productName = "Miss Card GameTests";
+			productReference = 9495E6542AAA231E0036290A /* Miss Card GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9495E65D2AAA231E0036290A /* Miss Card GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9495E66E2AAA231E0036290A /* Build configuration list for PBXNativeTarget "Miss Card GameUITests" */;
+			buildPhases = (
+				9495E65A2AAA231E0036290A /* Sources */,
+				9495E65B2AAA231E0036290A /* Frameworks */,
+				9495E65C2AAA231E0036290A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9495E6602AAA231E0036290A /* PBXTargetDependency */,
+			);
+			name = "Miss Card GameUITests";
+			productName = "Miss Card GameUITests";
+			productReference = 9495E65E2AAA231E0036290A /* Miss Card GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9495E6362AAA231D0036290A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					9495E63D2AAA231D0036290A = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					9495E6532AAA231E0036290A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9495E63D2AAA231D0036290A;
+					};
+					9495E65D2AAA231E0036290A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9495E63D2AAA231D0036290A;
+					};
+				};
+			};
+			buildConfigurationList = 9495E6392AAA231D0036290A /* Build configuration list for PBXProject "Miss Card Game" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9495E6352AAA231D0036290A;
+			packageReferences = (
+				9495E6792AAA27B80036290A /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+				9495E67E2AAA2B560036290A /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
+			productRefGroup = 9495E63F2AAA231D0036290A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9495E63D2AAA231D0036290A /* Miss Card Game */,
+				9495E6532AAA231E0036290A /* Miss Card GameTests */,
+				9495E65D2AAA231E0036290A /* Miss Card GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9495E63C2AAA231D0036290A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9495E6772AAA26890036290A /* Best Player.csv in Resources */,
+				9495E64E2AAA231E0036290A /* LaunchScreen.storyboard in Resources */,
+				9495E64B2AAA231E0036290A /* Assets.xcassets in Resources */,
+				9495E6782AAA26890036290A /* Miss Card.csv in Resources */,
+				9495E6492AAA231D0036290A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9495E6522AAA231E0036290A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9495E65C2AAA231E0036290A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9495E63A2AAA231D0036290A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9495E6872AAA3F710036290A /* PickCard.swift in Sources */,
+				942608412AAA4FFC00018B2E /* cameraViewController.swift in Sources */,
+				94B272B92AAADCBF0062440B /* ReviewViewController.swift in Sources */,
+				9495E6462AAA231D0036290A /* ViewController.swift in Sources */,
+				94AC7BBE2AAAAE4400967CF9 /* CameraCollectionViewController.swift in Sources */,
+				9495E6422AAA231D0036290A /* AppDelegate.swift in Sources */,
+				942608432AAA819600018B2E /* TableTableViewController.swift in Sources */,
+				94AC7BCB2AAAC48000967CF9 /* DataPass.m in Sources */,
+				94AC7BCD2AAAC7F800967CF9 /* PlayCamViewController.swift in Sources */,
+				94AC7BC02AAAB04800967CF9 /* CameraCollectionViewCell.swift in Sources */,
+				9495E6442AAA231D0036290A /* SceneDelegate.swift in Sources */,
+				9495E6852AAA3BC50036290A /* ImageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9495E6502AAA231E0036290A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9495E6592AAA231E0036290A /* Miss_Card_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9495E65A2AAA231E0036290A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9495E6652AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift in Sources */,
+				9495E6632AAA231E0036290A /* Miss_Card_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9495E6562AAA231E0036290A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9495E63D2AAA231D0036290A /* Miss Card Game */;
+			targetProxy = 9495E6552AAA231E0036290A /* PBXContainerItemProxy */;
+		};
+		9495E6602AAA231E0036290A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9495E63D2AAA231D0036290A /* Miss Card Game */;
+			targetProxy = 9495E65F2AAA231E0036290A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9495E6472AAA231D0036290A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9495E6482AAA231D0036290A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9495E64C2AAA231E0036290A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9495E64D2AAA231E0036290A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9495E6662AAA231E0036290A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9495E6672AAA231E0036290A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9495E6692AAA231E0036290A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCA5BQ8VVP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Miss Card Game/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Miss Card Game/Miss Card Game-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9495E66A2AAA231E0036290A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCA5BQ8VVP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Miss Card Game/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Miss Card Game/Miss Card Game-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9495E66C2AAA231E0036290A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCA5BQ8VVP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miss Card Game.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Miss Card Game";
+			};
+			name = Debug;
+		};
+		9495E66D2AAA231E0036290A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCA5BQ8VVP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miss Card Game.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Miss Card Game";
+			};
+			name = Release;
+		};
+		9495E66F2AAA231E0036290A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCA5BQ8VVP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Miss Card Game";
+			};
+			name = Debug;
+		};
+		9495E6702AAA231E0036290A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UCA5BQ8VVP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Miss Card Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9495E6392AAA231D0036290A /* Build configuration list for PBXProject "Miss Card Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9495E6662AAA231E0036290A /* Debug */,
+				9495E6672AAA231E0036290A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9495E6682AAA231E0036290A /* Build configuration list for PBXNativeTarget "Miss Card Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9495E6692AAA231E0036290A /* Debug */,
+				9495E66A2AAA231E0036290A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9495E66B2AAA231E0036290A /* Build configuration list for PBXNativeTarget "Miss Card GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9495E66C2AAA231E0036290A /* Debug */,
+				9495E66D2AAA231E0036290A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9495E66E2AAA231E0036290A /* Build configuration list for PBXNativeTarget "Miss Card GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9495E66F2AAA231E0036290A /* Debug */,
+				9495E6702AAA231E0036290A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9495E6792AAA27B80036290A /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		9495E67E2AAA2B560036290A /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9495E67A2AAA27B80036290A /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9495E6792AAA27B80036290A /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+		9495E67F2AAA2B560036290A /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9495E67E2AAA2B560036290A /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9495E6362AAA231D0036290A /* Project object */;
+}
