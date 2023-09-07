@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942608412AAA4FFC00018B2E /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942608402AAA4FFC00018B2E /* cameraViewController.swift */; };
 		9495E6422AAA231D0036290A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6412AAA231D0036290A /* AppDelegate.swift */; };
 		9495E6442AAA231D0036290A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6432AAA231D0036290A /* SceneDelegate.swift */; };
 		9495E6462AAA231D0036290A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6452AAA231D0036290A /* ViewController.swift */; };
@@ -16,6 +17,12 @@
 		9495E6592AAA231E0036290A /* Miss_Card_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6582AAA231E0036290A /* Miss_Card_GameTests.swift */; };
 		9495E6632AAA231E0036290A /* Miss_Card_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6622AAA231E0036290A /* Miss_Card_GameUITests.swift */; };
 		9495E6652AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6642AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift */; };
+		9495E6772AAA26890036290A /* Best Player.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9495E6752AAA26890036290A /* Best Player.csv */; };
+		9495E6782AAA26890036290A /* Miss Card.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9495E6762AAA26890036290A /* Miss Card.csv */; };
+		9495E67B2AAA27B80036290A /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 9495E67A2AAA27B80036290A /* SwiftCSV */; };
+		9495E6802AAA2B560036290A /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 9495E67F2AAA2B560036290A /* CoreXLSX */; };
+		9495E6852AAA3BC50036290A /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6842AAA3BC50036290A /* ImageModel.m */; };
+		9495E6872AAA3F710036290A /* PickCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6862AAA3F710036290A /* PickCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		942608402AAA4FFC00018B2E /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		9495E63E2AAA231D0036290A /* Miss Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miss Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9495E6412AAA231D0036290A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9495E6432AAA231D0036290A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,13 @@
 		9495E65E2AAA231E0036290A /* Miss Card GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miss Card GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9495E6622AAA231E0036290A /* Miss_Card_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miss_Card_GameUITests.swift; sourceTree = "<group>"; };
 		9495E6642AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miss_Card_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9495E6752AAA26890036290A /* Best Player.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Best Player.csv"; sourceTree = "<group>"; };
+		9495E6762AAA26890036290A /* Miss Card.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Miss Card.csv"; sourceTree = "<group>"; };
+		9495E6812AAA2B7A0036290A /* Miss Card.xlsx */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Miss Card.xlsx"; path = "../../../../../../Documents/MSCS/7323/Assignment 1/Miss Card.xlsx"; sourceTree = "<group>"; };
+		9495E6822AAA3BC50036290A /* Miss Card Game-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Miss Card Game-Bridging-Header.h"; sourceTree = "<group>"; };
+		9495E6832AAA3BC50036290A /* ImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
+		9495E6842AAA3BC50036290A /* ImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
+		9495E6862AAA3F710036290A /* PickCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9495E6802AAA2B560036290A /* CoreXLSX in Frameworks */,
+				9495E67B2AAA27B80036290A /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +116,21 @@
 		9495E6402AAA231D0036290A /* Miss Card Game */ = {
 			isa = PBXGroup;
 			children = (
+				9495E6812AAA2B7A0036290A /* Miss Card.xlsx */,
+				9495E6752AAA26890036290A /* Best Player.csv */,
+				9495E6762AAA26890036290A /* Miss Card.csv */,
 				9495E6412AAA231D0036290A /* AppDelegate.swift */,
 				9495E6432AAA231D0036290A /* SceneDelegate.swift */,
 				9495E6452AAA231D0036290A /* ViewController.swift */,
+				942608402AAA4FFC00018B2E /* cameraViewController.swift */,
 				9495E6472AAA231D0036290A /* Main.storyboard */,
+				9495E6862AAA3F710036290A /* PickCard.swift */,
 				9495E64A2AAA231E0036290A /* Assets.xcassets */,
+				9495E6832AAA3BC50036290A /* ImageModel.h */,
+				9495E6842AAA3BC50036290A /* ImageModel.m */,
 				9495E64C2AAA231E0036290A /* LaunchScreen.storyboard */,
 				9495E64F2AAA231E0036290A /* Info.plist */,
+				9495E6822AAA3BC50036290A /* Miss Card Game-Bridging-Header.h */,
 			);
 			path = "Miss Card Game";
 			sourceTree = "<group>";
@@ -143,6 +168,10 @@
 			dependencies = (
 			);
 			name = "Miss Card Game";
+			packageProductDependencies = (
+				9495E67A2AAA27B80036290A /* SwiftCSV */,
+				9495E67F2AAA2B560036290A /* CoreXLSX */,
+			);
 			productName = "Miss Card Game";
 			productReference = 9495E63E2AAA231D0036290A /* Miss Card Game.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +224,7 @@
 				TargetAttributes = {
 					9495E63D2AAA231D0036290A = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					9495E6532AAA231E0036290A = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -215,6 +245,10 @@
 				Base,
 			);
 			mainGroup = 9495E6352AAA231D0036290A;
+			packageReferences = (
+				9495E6792AAA27B80036290A /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+				9495E67E2AAA2B560036290A /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
 			productRefGroup = 9495E63F2AAA231D0036290A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,8 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9495E6772AAA26890036290A /* Best Player.csv in Resources */,
 				9495E64E2AAA231E0036290A /* LaunchScreen.storyboard in Resources */,
 				9495E64B2AAA231E0036290A /* Assets.xcassets in Resources */,
+				9495E6782AAA26890036290A /* Miss Card.csv in Resources */,
 				9495E6492AAA231D0036290A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +294,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9495E6872AAA3F710036290A /* PickCard.swift in Sources */,
+				942608412AAA4FFC00018B2E /* cameraViewController.swift in Sources */,
 				9495E6462AAA231D0036290A /* ViewController.swift in Sources */,
 				9495E6422AAA231D0036290A /* AppDelegate.swift in Sources */,
 				9495E6442AAA231D0036290A /* SceneDelegate.swift in Sources */,
+				9495E6852AAA3BC50036290A /* ImageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UCA5BQ8VVP;
@@ -453,6 +493,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Miss Card Game/Miss Card Game-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +505,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UCA5BQ8VVP;
@@ -481,6 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.Miss-Card-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Miss Card Game/Miss Card Game-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -602,6 +646,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9495E6792AAA27B80036290A /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+		9495E67E2AAA2B560036290A /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9495E67A2AAA27B80036290A /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9495E6792AAA27B80036290A /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+		9495E67F2AAA2B560036290A /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9495E67E2AAA2B560036290A /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9495E6362AAA231D0036290A /* Project object */;
 }
