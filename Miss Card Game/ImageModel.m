@@ -9,6 +9,7 @@
 
 @implementation ImageModel
 @synthesize imageNames = _imageNames;
+@synthesize cameraImageNames = _cameraImageNames;
 +(ImageModel*)shareInstance{
     static ImageModel* _shareInstance = nil;
     
@@ -34,4 +35,20 @@
     image =[UIImage imageNamed:name];
     return image;
 }
+
+
+-(NSArray*) cameraImageNames{
+    if(!_cameraImageNames)
+        _cameraImageNames = @[@"Cat",@"Monkey",@"Old man",@"Smile",@"Shock"];
+    
+    
+    return _cameraImageNames;
+}
+
+-(UIImage*)getImageWithFunName:(NSString*)funName{
+    UIImage* funImage = nil;
+    funImage =[UIImage imageNamed:funName];
+    return funImage;
+}
+
 @end
