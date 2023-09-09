@@ -13,8 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(ImageModel*)shareInstance;
 -(UIImage*)getImageWithName:(NSString*)name;
-@property (strong,nonatomic) NSArray* imageNames;
+-(UIImage*)getImageWithFunName:(NSString*)funName;
 
+@property (strong,nonatomic) NSArray* imageNames;
+@property (strong,nonatomic) NSArray* cameraImageNames;
 
 @end
 

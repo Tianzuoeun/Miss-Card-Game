@@ -6,14 +6,18 @@
 //
 
 import UIKit
-
+import SwiftUI
 
 class ViewController: UIViewController {
     
-    
-    
+    //import SwitchNum
+    lazy var dataPass = {DataPass.shareInstance()}()
+    var pics = 1
     // Set Up Picker View//
     @IBOutlet var picker: UIPickerView!
+    
+    @IBOutlet weak var funnyPic: UIImageView!
+    
     
     let data = ["2","3","4","5","6","7","8","9","10"]
     
@@ -22,9 +26,24 @@ class ViewController: UIViewController {
         
     @IBAction func testStepper(_ sender: UIStepper) {
             steplabel.text = String(sender.value)
+        self.dataPass.numQuantity[2]=Int(sender.value)
+        
+        
         }
-
     
+   
+    
+    
+    //Set up Switch
+    
+    @IBAction func playSwitch(_ sender: UISwitch) {
+        if sender.isOn{
+            dataPass.switchNum = 1
+            
+        }else{
+            dataPass.switchNum = 2
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -35,8 +54,9 @@ class ViewController: UIViewController {
         picker.dataSource = self
         picker.delegate = self
     }
-
-
+   
+        
+    
 }
 //Set up Picker View Info//
 extension ViewController: UIPickerViewDataSource {
