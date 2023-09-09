@@ -369,6 +369,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="submitReview" destination="M6i-hV-sNv" eventType="touchUpInside" id="8iy-gU-ONK"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUl-Cw-eXL">
                                 <rect key="frame" x="61" y="450" width="85" height="31"/>
@@ -413,14 +416,24 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z71-1P-bYr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Khw-6w-n1q" appends="YES" id="lh8-ab-wf5"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="GwH-9t-2Ri"/>
                     <connections>
+                        <outlet property="bestPlayerTextField" destination="wmO-Ub-zPn" id="HLS-n8-9BG"/>
                         <outlet property="historyList" destination="IVX-US-D6C" id="n53-P8-Pih"/>
                         <outlet property="rateScore" destination="paj-1s-8w7" id="mBh-Wq-77L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oxy-NN-Zhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Khw-6w-n1q">
+                    <connections>
+                        <action selector="tapDidCancel:" destination="M6i-hV-sNv" id="sS9-2f-gOl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4658.7786259541981" y="1031.6901408450706"/>
         </scene>

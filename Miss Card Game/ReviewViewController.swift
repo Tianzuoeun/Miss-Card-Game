@@ -7,9 +7,11 @@
 
 import UIKit
 
-class ReviewViewController: UIViewController {
+class ReviewViewController: UIViewController, UITextFieldDelegate {
     
     lazy var dataPass = {DataPass.shareInstance()}()
+    
+    @IBOutlet weak var bestPlayerTextField: UITextField!
     
     @IBOutlet weak var historyList: UILabel!
     
@@ -32,6 +34,32 @@ class ReviewViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        bestPlayerTextField.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        self.bestPlayerTextField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func submitReview() {
+        var bestPlayerToDisplay = " "
+        
+        bestPlayerToDisplay = "The last best player is  \(String(describing: self.bestPlayerTextField.text))"
+        
+        self.historyList.text = bestPlayerToDisplay
+        
+        self.bestPlayerTextField.resignFirstResponder()
+        
+        // NEED A CONNECT TO DATABASE
+        
+    }
+
+    @IBAction func tapDidCancel(_ sender: UITapGestureRecognizer) {
+
+        
+        self.bestPlayerTextField.resignFirstResponder()
     }
     
 
