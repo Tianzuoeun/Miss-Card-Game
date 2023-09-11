@@ -1,5 +1,5 @@
 //
-//  ImportCSV.swift
+//  ViewControllerToImportData.swift
 //  Miss Card Game
 //
 //  Created by howardshan on 9/11/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ImportCSV: UIViewController {
+class ViewControllerToImportData: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
