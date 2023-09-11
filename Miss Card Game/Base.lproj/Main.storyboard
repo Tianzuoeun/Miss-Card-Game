@@ -288,55 +288,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explaination" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-71-Gs3">
-                                <rect key="frame" x="57" y="435" width="259" height="172"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ry-2h-mzT">
-                                <rect key="frame" x="136.66666666666663" y="657" width="120" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Play Camera"/>
-                                <connections>
-                                    <segue destination="50w-Xu-aJ6" kind="show" id="BRT-cw-hJD"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jI9-9r-i6i">
-                                <rect key="frame" x="76" y="188" width="240" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-Js-u2d">
-                                <rect key="frame" x="138" y="747" width="118" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Finish Game"/>
-                                <connections>
-                                    <segue destination="M6i-hV-sNv" kind="show" id="ST9-Yp-W0m"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvX-To-ruj">
-                                <rect key="frame" x="132" y="118" width="130" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Pick You Card"/>
-                                <connections>
-                                    <action selector="PickButton:" destination="xyr-Y9-OBu" eventType="touchUpInside" id="KVA-8H-iBs"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqI-Aq-94a">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPH-4j-zqk">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1300"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explaination" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg0-71-Gs3">
+                                                <rect key="frame" x="67" y="308" width="259" height="172"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="172" id="VBA-5X-fXv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ry-2h-mzT">
+                                                <rect key="frame" x="136.66666666666666" y="488" width="119.99999999999997" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="CTQ-Sd-GB1"/>
+                                                    <constraint firstAttribute="width" constant="120" id="tJI-ug-VUN"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Play Camera"/>
+                                                <connections>
+                                                    <segue destination="50w-Xu-aJ6" kind="show" id="BRT-cw-hJD"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jI9-9r-i6i">
+                                                <rect key="frame" x="76" y="105" width="240" height="181"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="181" id="Ms3-Cq-1Qu"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvX-To-ruj">
+                                                <rect key="frame" x="131" y="45" width="131" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="131" id="Uk9-PZ-uAt"/>
+                                                    <constraint firstAttribute="height" constant="35" id="qbB-fZ-PcU"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Pick You Card"/>
+                                                <connections>
+                                                    <action selector="PickButton:" destination="xyr-Y9-OBu" eventType="touchUpInside" id="KVA-8H-iBs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOP-Js-u2d">
+                                                <rect key="frame" x="137.66666666666666" y="531" width="118" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="118" id="IAh-qX-xeW"/>
+                                                    <constraint firstAttribute="height" constant="35" id="Ptm-D5-Xgy"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Finish Game"/>
+                                                <connections>
+                                                    <segue destination="M6i-hV-sNv" kind="show" id="ST9-Yp-W0m"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vg0-71-Gs3" secondAttribute="trailing" constant="67" id="1gr-48-0fn"/>
+                                            <constraint firstItem="2Ry-2h-mzT" firstAttribute="centerX" secondItem="GPH-4j-zqk" secondAttribute="centerX" id="3XC-fE-zUg"/>
+                                            <constraint firstItem="qOP-Js-u2d" firstAttribute="centerX" secondItem="GPH-4j-zqk" secondAttribute="centerX" id="9sy-7O-qid"/>
+                                            <constraint firstItem="UvX-To-ruj" firstAttribute="leading" secondItem="GPH-4j-zqk" secondAttribute="leading" constant="131" id="CmO-uj-cND"/>
+                                            <constraint firstItem="vg0-71-Gs3" firstAttribute="leading" secondItem="GPH-4j-zqk" secondAttribute="leading" constant="67" id="F3M-5v-ZMI"/>
+                                            <constraint firstItem="UvX-To-ruj" firstAttribute="top" secondItem="GPH-4j-zqk" secondAttribute="top" constant="45" id="Nnz-D3-aGY"/>
+                                            <constraint firstItem="jI9-9r-i6i" firstAttribute="leading" secondItem="GPH-4j-zqk" secondAttribute="leading" constant="76" id="Qpf-5g-5QW"/>
+                                            <constraint firstItem="qOP-Js-u2d" firstAttribute="top" secondItem="GPH-4j-zqk" secondAttribute="top" constant="531" id="Y13-DX-ddM"/>
+                                            <constraint firstItem="vg0-71-Gs3" firstAttribute="top" secondItem="GPH-4j-zqk" secondAttribute="top" constant="308" id="YWv-xg-afG"/>
+                                            <constraint firstAttribute="trailing" secondItem="UvX-To-ruj" secondAttribute="trailing" constant="131" id="cmB-VS-dQC"/>
+                                            <constraint firstItem="jI9-9r-i6i" firstAttribute="top" secondItem="GPH-4j-zqk" secondAttribute="top" constant="105" id="gNF-p2-UUs"/>
+                                            <constraint firstItem="UvX-To-ruj" firstAttribute="centerX" secondItem="GPH-4j-zqk" secondAttribute="centerX" id="hwz-2c-8XF"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1000" id="m5G-dU-hyZ"/>
+                                            <constraint firstItem="2Ry-2h-mzT" firstAttribute="top" secondItem="GPH-4j-zqk" secondAttribute="top" constant="488" id="wL6-Wf-MxA"/>
+                                            <constraint firstAttribute="trailing" secondItem="jI9-9r-i6i" secondAttribute="trailing" constant="77" id="wnS-iU-Xxh"/>
+                                            <constraint firstAttribute="height" constant="1300" id="zXQ-YX-CH6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GPH-4j-zqk" firstAttribute="top" secondItem="nqI-Aq-94a" secondAttribute="top" id="8LG-WY-anS"/>
+                                    <constraint firstAttribute="trailing" secondItem="GPH-4j-zqk" secondAttribute="trailing" id="K9w-Fa-woR"/>
+                                    <constraint firstAttribute="bottom" secondItem="GPH-4j-zqk" secondAttribute="bottom" id="fTd-tt-p6f"/>
+                                    <constraint firstItem="GPH-4j-zqk" firstAttribute="leading" secondItem="nqI-Aq-94a" secondAttribute="leading" id="oWM-2y-Qcm"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kbW-ya-Sbg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vg0-71-Gs3" firstAttribute="width" secondItem="vYi-ct-TPI" secondAttribute="width" multiplier="0.659033" id="4qf-Ge-P8J"/>
-                            <constraint firstItem="vg0-71-Gs3" firstAttribute="height" secondItem="vYi-ct-TPI" secondAttribute="height" multiplier="0.201878" id="A7t-ge-WZo"/>
-                            <constraint firstItem="vg0-71-Gs3" firstAttribute="top" secondItem="kbW-ya-Sbg" secondAttribute="top" constant="332" id="bFe-1R-svG"/>
-                            <constraint firstItem="kbW-ya-Sbg" firstAttribute="trailing" secondItem="vg0-71-Gs3" secondAttribute="trailing" constant="77" id="eJc-zG-Uvd"/>
+                            <constraint firstAttribute="bottom" secondItem="nqI-Aq-94a" secondAttribute="bottom" id="8Fp-Lp-ImE"/>
+                            <constraint firstItem="nqI-Aq-94a" firstAttribute="top" secondItem="vYi-ct-TPI" secondAttribute="top" id="BXc-KH-kWU"/>
+                            <constraint firstItem="nqI-Aq-94a" firstAttribute="leading" secondItem="kbW-ya-Sbg" secondAttribute="leading" id="ND6-Ka-Lt8"/>
+                            <constraint firstItem="GPH-4j-zqk" firstAttribute="height" secondItem="vYi-ct-TPI" secondAttribute="height" multiplier="1.52582" id="T4w-jl-WC5"/>
+                            <constraint firstItem="GPH-4j-zqk" firstAttribute="width" secondItem="vYi-ct-TPI" secondAttribute="width" id="ukl-9a-K62"/>
+                            <constraint firstItem="nqI-Aq-94a" firstAttribute="trailing" secondItem="kbW-ya-Sbg" secondAttribute="trailing" id="zD8-tu-hdF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tT7-ez-QOF"/>
+                    <size key="freeformSize" width="393" height="852"/>
                     <connections>
                         <outlet property="explaination" destination="vg0-71-Gs3" id="hwx-5v-EGv"/>
                         <outlet property="playButton" destination="2Ry-2h-mzT" id="BUK-wc-MDk"/>
