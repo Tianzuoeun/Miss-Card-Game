@@ -17,22 +17,29 @@ class PickCard: UIViewController {
     
     @IBOutlet weak var explaination: UILabel!
     
-    
+    @IBOutlet weak var PlayerNumber: UILabel!
+    var yourTurn: Int = 1
     var numQ = DataPass.shareInstance().numQuantity
     
     @IBAction func PickButton(_ sender: UIButton) {
         
         for i in 1...50{
-            var ranNumber = Int.random(in: 0..<3)
+            var ranNumber = Int.random(in: 0..<12)
             if let restNum = numQ[ranNumber] as? Int,
             (restNum>0){
-                
+                PlayerNumber.text = "Player " + String(yourTurn)
+                if (yourTurn < Int(self.dataPass.playerNum)){
+                    yourTurn = yourTurn + 1
+                }else{yourTurn = 1
+                    
+                }
                 if let image = self.dataPass.imageName[ranNumber] as? String{
                     // Do any additional setup after loading the view.
                     self.pokerImage.image = UIImage(named: image)}
                 if let expl = self.dataPass.explaination[ranNumber] as? String{
                     explaination.text = expl
                 }
+                
                 numQ[ranNumber] = numQ[ranNumber] as! Int - 1
                 break
             }else{

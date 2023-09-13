@@ -12,8 +12,10 @@
 @implementation DataPass
 @synthesize ImageName = _ImageName;
 @synthesize NumQuantity = _NumQuantity;
+@synthesize PlayerNum = _PlayerNum;
 @synthesize Explaination = _Explaination;
 @synthesize History =_History;
+@synthesize NewBestPlayer =_NewBestPlayer;
 
 +(DataPass*)shareInstance{
     static DataPass* _shareInstance = nil;
@@ -42,12 +44,17 @@
     return _PicNum;
 }
 
-
+-(NSNumber*) PlayerNum{
+    if (!_PlayerNum){
+        _PlayerNum =@3;
+    }
+    return _PlayerNum;
+}
 
 //ImageName
 -(NSArray*) ImageName{
     if(!_ImageName){
-        _ImageName = @[@"1",@"2",@"3"];
+        _ImageName = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13"];
     }
     return _ImageName;
 }
@@ -56,7 +63,7 @@
 //Explaination
 -(NSArray*) Explaination{
     if(!_Explaination){
-        _Explaination = @[@"Point one to Drink",@"Drink a cup and then say 'Thanks boos'",@"You have the rights to go to restroom"];
+        _Explaination = Nil;
     }
     return _Explaination;
 }
@@ -64,14 +71,29 @@
 //NumQuantity
 -(NSArray*) NumQuantity{
     if(!_NumQuantity){
-        _NumQuantity = @[@4,@4,@4];
+        _NumQuantity = Nil;
     } return _NumQuantity;
 }
 
+
+
+//NewBestPlayer
+- (NSString *)NewBestPlayer{
+    if(!_NewBestPlayer){
+        _NewBestPlayer = Nil;
+    } return _NewBestPlayer;
+}
+
+
 //History
--(NSArray*) History{
+-(NSMutableArray*) History{
     if(!_History){
-        _History = @[@"Genius"];
+        _History = [[NSMutableArray alloc] initWithObjects:  nil];
     }return _History;
 }
+
+
+
+
+
 @end

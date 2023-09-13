@@ -13,13 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 +(DataPass*)shareInstance;
 @property (strong,nonatomic) NSNumber* SwitchNum;
 @property (strong,nonatomic) NSNumber* PicNum;
+@property (strong,nonatomic) NSNumber* PlayerNum;
 
 // property for the random num
 
 @property (strong,nonatomic) NSArray* ImageName;
 @property (strong,nonatomic) NSArray* Explaination;
 @property (strong,nonatomic) NSArray* NumQuantity;
-@property (strong,nonatomic) NSArray* History;
+@property (strong,nonatomic) NSMutableArray* History;
+@property (strong,nonatomic) NSString* NewBestPlayer;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -4,3 +4,4 @@
 
 #import "ImageModel.h"
 #import "DataPass.h"
+#include <sqlite3.h>

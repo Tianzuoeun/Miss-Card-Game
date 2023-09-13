@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		565E9B7A2AB10F8C0013ABFD /* MissCardDB2nd.db in Resources */ = {isa = PBXBuildFile; fileRef = 565E9B792AB10F8C0013ABFD /* MissCardDB2nd.db */; };
 		942608412AAA4FFC00018B2E /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942608402AAA4FFC00018B2E /* cameraViewController.swift */; };
 		942608432AAA819600018B2E /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942608422AAA819600018B2E /* TableTableViewController.swift */; };
 		9495E6422AAA231D0036290A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9495E6412AAA231D0036290A /* AppDelegate.swift */; };
@@ -29,6 +30,8 @@
 		94AC7BCB2AAAC48000967CF9 /* DataPass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC7BCA2AAAC48000967CF9 /* DataPass.m */; };
 		94AC7BCD2AAAC7F800967CF9 /* PlayCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AC7BCC2AAAC7F800967CF9 /* PlayCamViewController.swift */; };
 		94B272B92AAADCBF0062440B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B272B82AAADCBF0062440B /* ReviewViewController.swift */; };
+		94D5DB922AB0CAA0009AB923 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D5DB912AB0CAA0009AB923 /* libsqlite3.tbd */; };
+		94D5DB962AB0D11E009AB923 /* PokerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D5DB952AB0D11E009AB923 /* PokerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		565E9B792AB10F8C0013ABFD /* MissCardDB2nd.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = MissCardDB2nd.db; sourceTree = "<group>"; };
 		942608402AAA4FFC00018B2E /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 		942608422AAA819600018B2E /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 		9495E63E2AAA231D0036290A /* Miss Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miss Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,8 @@
 		94AC7BCA2AAAC48000967CF9 /* DataPass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataPass.m; sourceTree = "<group>"; };
 		94AC7BCC2AAAC7F800967CF9 /* PlayCamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCamViewController.swift; sourceTree = "<group>"; };
 		94B272B82AAADCBF0062440B /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		94D5DB912AB0CAA0009AB923 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		94D5DB952AB0D11E009AB923 /* PokerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D5DB922AB0CAA0009AB923 /* libsqlite3.tbd in Frameworks */,
 				9495E6802AAA2B560036290A /* CoreXLSX in Frameworks */,
 				9495E67B2AAA27B80036290A /* SwiftCSV in Frameworks */,
 			);
@@ -112,6 +119,7 @@
 				9495E6572AAA231E0036290A /* Miss Card GameTests */,
 				9495E6612AAA231E0036290A /* Miss Card GameUITests */,
 				9495E63F2AAA231D0036290A /* Products */,
+				94D5DB902AB0CAA0009AB923 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,12 +136,14 @@
 		9495E6402AAA231D0036290A /* Miss Card Game */ = {
 			isa = PBXGroup;
 			children = (
+				565E9B792AB10F8C0013ABFD /* MissCardDB2nd.db */,
 				9495E6752AAA26890036290A /* Best Player.csv */,
 				9495E6762AAA26890036290A /* Miss Card.csv */,
 				9495E6412AAA231D0036290A /* AppDelegate.swift */,
 				9495E6432AAA231D0036290A /* SceneDelegate.swift */,
 				9495E6452AAA231D0036290A /* ViewController.swift */,
 				942608402AAA4FFC00018B2E /* cameraViewController.swift */,
+				94D5DB952AB0D11E009AB923 /* PokerViewController.swift */,
 				94AC7BCC2AAAC7F800967CF9 /* PlayCamViewController.swift */,
 				942608422AAA819600018B2E /* TableTableViewController.swift */,
 				94AC7BBF2AAAB04800967CF9 /* CameraCollectionViewCell.swift */,
@@ -168,6 +178,14 @@
 				9495E6642AAA231E0036290A /* Miss_Card_GameUITestsLaunchTests.swift */,
 			);
 			path = "Miss Card GameUITests";
+			sourceTree = "<group>";
+		};
+		94D5DB902AB0CAA0009AB923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D5DB912AB0CAA0009AB923 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +305,7 @@
 				9495E64E2AAA231E0036290A /* LaunchScreen.storyboard in Resources */,
 				9495E64B2AAA231E0036290A /* Assets.xcassets in Resources */,
 				9495E6782AAA26890036290A /* Miss Card.csv in Resources */,
+				565E9B7A2AB10F8C0013ABFD /* MissCardDB2nd.db in Resources */,
 				9495E6492AAA231D0036290A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +340,7 @@
 				942608432AAA819600018B2E /* TableTableViewController.swift in Sources */,
 				94AC7BCB2AAAC48000967CF9 /* DataPass.m in Sources */,
 				94AC7BCD2AAAC7F800967CF9 /* PlayCamViewController.swift in Sources */,
+				94D5DB962AB0D11E009AB923 /* PokerViewController.swift in Sources */,
 				94AC7BC02AAAB04800967CF9 /* CameraCollectionViewCell.swift in Sources */,
 				9495E6442AAA231D0036290A /* SceneDelegate.swift in Sources */,
 				9495E6852AAA3BC50036290A /* ImageModel.m in Sources */,
